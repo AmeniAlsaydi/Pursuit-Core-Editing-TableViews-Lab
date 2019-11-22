@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B740912A2387836200ACA68C /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74091292387836200ACA68C /* Grocery.swift */; };
 		B745EF26238769A6007AAA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745EF25238769A6007AAA5C /* AppDelegate.swift */; };
 		B745EF28238769A6007AAA5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745EF27238769A6007AAA5C /* SceneDelegate.swift */; };
-		B745EF2A238769A6007AAA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745EF29238769A6007AAA5C /* ViewController.swift */; };
+		B745EF2A238769A6007AAA5C /* GroceryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745EF29238769A6007AAA5C /* GroceryListController.swift */; };
 		B745EF2D238769A6007AAA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B745EF2B238769A6007AAA5C /* Main.storyboard */; };
 		B745EF2F238769A9007AAA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B745EF2E238769A9007AAA5C /* Assets.xcassets */; };
 		B745EF32238769A9007AAA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B745EF30238769A9007AAA5C /* LaunchScreen.storyboard */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B74091292387836200ACA68C /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
 		B745EF22238769A6007AAA5C /* Editing-TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Editing-TableViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B745EF25238769A6007AAA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B745EF27238769A6007AAA5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B745EF29238769A6007AAA5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B745EF29238769A6007AAA5C /* GroceryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListController.swift; sourceTree = "<group>"; };
 		B745EF2C238769A6007AAA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B745EF2E238769A9007AAA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B745EF31238769A9007AAA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 			children = (
 				B745EF25238769A6007AAA5C /* AppDelegate.swift */,
 				B745EF27238769A6007AAA5C /* SceneDelegate.swift */,
-				B745EF29238769A6007AAA5C /* ViewController.swift */,
+				B745EF29238769A6007AAA5C /* GroceryListController.swift */,
+				B74091292387836200ACA68C /* Grocery.swift */,
 				B745EF3923876A6E007AAA5C /* AddGroceriesController.swift */,
 				B745EF2B238769A6007AAA5C /* Main.storyboard */,
 				B745EF2E238769A9007AAA5C /* Assets.xcassets */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B745EF2A238769A6007AAA5C /* ViewController.swift in Sources */,
+				B745EF2A238769A6007AAA5C /* GroceryListController.swift in Sources */,
 				B745EF26238769A6007AAA5C /* AppDelegate.swift in Sources */,
 				B745EF28238769A6007AAA5C /* SceneDelegate.swift in Sources */,
 				B745EF3A23876A6E007AAA5C /* AddGroceriesController.swift in Sources */,
+				B740912A2387836200ACA68C /* Grocery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
