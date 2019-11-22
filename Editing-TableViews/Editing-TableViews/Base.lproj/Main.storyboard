@@ -94,6 +94,9 @@
                                 <state key="normal" title="Add item">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eiz-1P-mpf" kind="unwind" unwindAction="addNewItemWithSegue:" id="LWL-kz-ZFc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -109,8 +112,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gHW-1c-1mz"/>
                     </view>
+                    <connections>
+                        <outlet property="addItemTextField" destination="HCM-pY-1nz" id="CPu-H1-NTc"/>
+                        <outlet property="addPriceTextField" destination="8hB-vN-SM2" id="JLK-zG-EKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJf-CW-bOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eiz-1P-mpf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1740.5797101449277" y="129.91071428571428"/>
         </scene>

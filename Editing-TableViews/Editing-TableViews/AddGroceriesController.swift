@@ -9,22 +9,37 @@
 import UIKit
 
 class AddGroceriesController: UIViewController {
-
+    
+    @IBOutlet weak var addItemTextField: UITextField!
+    @IBOutlet weak var addPriceTextField: UITextField!
+    
+    var grocery: Grocery? // default is nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        addItemTextField.delegate = self
+        addPriceTextField.delegate = self
+        
+        grocery = Grocery(name: "item name", price: "2.00", status: .unpurchased)
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+}
 
+extension AddGroceriesController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+         textField.resignFirstResponder()
+        
+        if textField == addItemTextField {
+            grocery?.name = textField.text ?? "no item name"
+        }
+        
+        if textField == addPriceTextField {
+            grocery?.price = textField.text ?? "unknown price"
+        }
+        
+        return true
+    }
+    
 }

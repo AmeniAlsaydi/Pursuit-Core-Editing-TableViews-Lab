@@ -16,12 +16,13 @@ enum ItemStatus: String, CaseIterable  {
 struct Grocery{
     
     var name: String
-    var price: Double
+    var price: String // This should probably be a Double if we dont to use it later
     var status: ItemStatus
     
     static func createEmptyArray() -> [[Grocery]] {
         let groceries = Array(repeating: [Grocery](), count: ItemStatus.allCases.count)
         
+        // i need to create the sections 
         return groceries
     }
     

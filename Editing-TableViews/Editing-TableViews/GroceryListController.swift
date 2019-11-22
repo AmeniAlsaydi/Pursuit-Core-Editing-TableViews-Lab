@@ -20,16 +20,33 @@ class GroceryListController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        groceries = Grocery.createEmptyArray()
+        groceries = Grocery.createEmptyArray() // [[], []]
         tableView.dataSource = self
+        print(groceries)
     }
 
+    @IBAction func addNewItem(segue: UIStoryboardSegue) {
+    
+        guard let addGroceryVC = segue.source as? AddGroceriesController, let addedItem = addGroceryVC.grocery else {fatalError( "failed to access AddGroceriesController")}
+        
+        groceries[0].insert(addedItem, at: 0)
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    
+    
+    
 
 }
 
 extension GroceryListController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("num of items in sections: \(groceries[section].count)")
         return groceries[section].count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,6 +62,7 @@ extension GroceryListController: UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        print("num of sections: \(groceries.count)")
         return groceries.count
     }
     
