@@ -17,10 +17,10 @@ struct Grocery{
     
     var name: String
     var price: String // This should probably be a Double if we dont to use it later
-    var status: ItemStatus
+    // var status: ItemStatus
     
     static func createEmptyArray() -> [[Grocery]] {
-        let groceries = Array(repeating: [Grocery](), count: ItemStatus.allCases.count)
+        let groceries = Array(repeating: [Grocery](), count: 2) // ItemStatus.allCases.count)
         
         // i need to create the sections 
         return groceries

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Grocery List Controller-->
+        <!--Grocery List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GroceryListController" customModule="Editing_TableViews" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dbf-sB-Ehb">
+                    <navigationItem key="navigationItem" title="Grocery List" id="dbf-sB-Ehb">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="M7a-06-Nu7">
                             <connections>
                                 <segue destination="v0a-Rr-6k6" kind="presentation" id="H8s-yi-5zJ"/>
@@ -95,7 +95,7 @@
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eiz-1P-mpf" kind="unwind" unwindAction="addNewItemWithSegue:" id="LWL-kz-ZFc"/>
+                                    <segue destination="eiz-1P-mpf" kind="unwind" unwindAction="addNewItemWithSegue:" id="2cv-69-aGw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,8 +127,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IXL-Fm-l7a" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="43i-zr-l92">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="43i-zr-l92">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

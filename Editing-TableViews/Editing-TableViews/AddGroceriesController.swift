@@ -20,8 +20,8 @@ class AddGroceriesController: UIViewController {
         addItemTextField.delegate = self
         addPriceTextField.delegate = self
         
-        grocery = Grocery(name: "item name", price: "2.00", status: .unpurchased)
-    
+        grocery = Grocery(name: "item name", price: "2.00" )// , status: .unpurchased)
+     // at this point grocery is the above 
 
     }
 }
@@ -29,6 +29,8 @@ class AddGroceriesController: UIViewController {
 extension AddGroceriesController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        
          textField.resignFirstResponder()
         
         if textField == addItemTextField {
